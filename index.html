@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
+        darkMode: 'class',
         theme: {
           extend: {
             colors: {
@@ -16,6 +17,11 @@
               'brand-accent': '#f59e0b',
               'brand-text': '#e2e8f0',
               'brand-text-muted': '#a0aec0',
+              'lt-primary': '#f7fafc',
+              'lt-secondary': '#ffffff',
+              'lt-accent': '#dd6b20',
+              'lt-text': '#1a202c',
+              'lt-text-muted': '#4a5568',
             }
           }
         }
@@ -32,7 +38,7 @@
 }
 </script>
 </head>
-  <body class="bg-brand-primary">
+  <body class="transition-colors duration-300">
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
   </body>

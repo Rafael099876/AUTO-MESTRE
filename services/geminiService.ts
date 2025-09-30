@@ -55,7 +55,7 @@ const guideSchema = {
 const generateStepImage = async (prompt: string): Promise<string> => {
   try {
     const response = await ai.models.generateImages({
-      model: 'imagen-3.0-generate-002',
+      model: 'imagen-4.0-generate-001',
       prompt: `${prompt}, photorealistic, technical manual style, clean background, well-lit, high detail`,
       config: {
         numberOfImages: 1,

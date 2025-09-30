@@ -7,7 +7,7 @@ interface GuideStepProps {
 
 const GuideStep: React.FC<GuideStepProps> = ({ step }) => {
   return (
-    <div className="bg-brand-secondary rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+    <div className="bg-lt-secondary dark:bg-brand-secondary rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row">
       <div className="md:w-1/2">
         {step.imageUrl ? (
           <img 
@@ -16,16 +16,16 @@ const GuideStep: React.FC<GuideStepProps> = ({ step }) => {
             className="w-full h-64 object-cover" 
           />
         ) : (
-          <div className="w-full h-64 bg-gray-700 flex items-center justify-center">
-            <span className="text-brand-text-muted">Gerando imagem...</span>
+          <div className="w-full h-64 bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
+            <span className="text-lt-text-muted dark:text-brand-text-muted">Gerando imagem...</span>
           </div>
         )}
       </div>
       <div className="p-6 flex flex-col justify-center md:w-1/2">
-        <h4 className="text-2xl font-bold text-white">
-          <span className="text-brand-accent">Passo {step.step}:</span> {step.title}
+        <h4 className="text-2xl font-bold text-lt-text dark:text-white">
+          <span className="text-lt-accent dark:text-brand-accent">Passo {step.step}:</span> {step.title}
         </h4>
-        <p className="mt-4 text-brand-text-muted text-base leading-relaxed">
+        <p className="mt-4 text-lt-text-muted dark:text-brand-text-muted text-base leading-relaxed">
           {step.instruction}
         </p>
       </div>
