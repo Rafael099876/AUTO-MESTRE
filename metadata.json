@@ -1,0 +1,5 @@
+{
+  "name": "AutoMestre: Mecânico de Bolso",
+  "description": "Um assistente de bolso com IA para manutenção de veículos. Obtenha guias interativos e passo a passo com imagens para ajudá-lo em tarefas básicas como trocar um pneu ou verificar o óleo.",
+  "requestFramePermissions": []
+}
